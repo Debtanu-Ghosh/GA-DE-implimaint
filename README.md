@@ -1,7 +1,3 @@
-Here’s a **clean, professional GitHub README** tailored to your project and audience (researchers, reviewers, WCCI/IEEE readers).
-It clearly states the contribution and **mentions that updated code will be released shortly**, without sounding vague or unprofessional.
-
----
 
 # GA-Tuned DE Optimized KAN-GAN for Audio-Visual Speech Synthesis (AVSS)
 
