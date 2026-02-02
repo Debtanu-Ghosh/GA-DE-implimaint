@@ -1,45 +1,59 @@
-# KANGAN-AVSS
+# GA-Tuned DE Optimized KAN-GAN for Audio-Visual Speech Synthesis (AVSS)
 
-First, Run: 
-```
-pip install -r requirements.txt
-```
+This repository contains implementation of our work, where a **Genetic Algorithm (GA)** is used to tune **Differential Evolution (DE)** for automated hyperparameter optimization of a **Kolmogorov–Arnold Network enhanced Generative Adversarial Network (KAN-GAN)**.
 
-The VoxCeleb2 and LRS3-TED datasets are used in this work.
+---
+
+## 🔍 Key Contributions
+
+* **KAN-based GAN (KAN-GAN):**
+  Incorporation of Kolmogorov–Arnold Networks into the GAN discriminator for efficient modeling of high-dimensional nonlinear relationships with fewer parameters.
+
+* **GA-Tuned Differential Evolution (GA–DE):**
+  A hierarchical evolutionary optimization strategy where GA adaptively tunes DE control parameters for robust and automated hyperparameter optimization.
+
+* **Application to AVSS:**
+  Joint optimization of Voice Conversion (VC) and Audio-Visual Synthesis (AVS) for generating synchronized speech audio and facial video.
+
+* **Improved Stability and Quality:**
+  Enhanced adversarial balance, reduced training instability, and improved perceptual quality compared to conventional optimization approaches.
+
+---
+
+## 🧠 Method Overview
+
+1. **KAN-GAN Architecture** for VC and AVS
+2. **DE** optimizes KAN-GAN hyperparameters
+3. **GA** adaptively tunes DE control parameters
+4. **Loss-based fitness** guides evolutionary search
+5. Final optimized model trained for AVSS generation
+
+---
+
+## 🛠️ Code Status
+
+⚠️ **Important Notice**
+
+> The repository is currently under active development.
+> **The complete and updated implementation will be released shortly**, including:
+>
+> * GA–DE optimization pipeline
+> * KAN-GAN architecture
+> * Training and evaluation scripts
+> * Reproducibility instructions
+
+Please stay tuned for updates.
+
+---
+
+## 📄 Paper
+
+If you use this work, please cite our paper:
+
+> *GA-Tuned Differential Evolution for Hyperparameter Optimization of KAN-GAN in Audio-Visual Speech Synthesis*,
+> submitted to **WCCI (IEEE World Congress on Computational Intelligence)**.
+
+(Citation details will be updated upon publication.)
 
 
-
-## Train
-
-### Voice Conversion
-
-
-Generally, run:
-```
-python train_audio.py --data_path PATH_TO_TRAINING_DATA --experiment_name EXPERIMENT_NAME --save_freq SAVE_FREQ --test_path PATH_TO_TEST_AUDIO --batch_size BATCH_SIZE --save_dir PATH_TO_SAVE_MODEL
-```
-
-### Audio-visual Synthesis
-
-
-Generally, run:
-```
-python train_audiovisual.py --video_path PATH_TO_TRAINING_DATA --experiment_name EXPERIMENT_NAME --save_freq SAVE_FREQ --test_path PATH_TO_TEST_AUDIO --batch_size BATCH_SIZE --save_dir PATH_TO_SAVE_MODEL --use_256 --load_model LOAD_MODEL_PATH
-```
-
-## Test
-
-### Voice Conversion
-
-
-To convert a wavfile using a trained model, run:
-```
-python test_audio.py --model PATH_TO_MODEL --wav_path PATH_TO_INPUT --output_file PATH_TO_OUTPUT
-```
-
-### Audio-visual Synthesis
-
-Generally run:
-```
-python test_audiovisual.py --load_model PATH_TO_MODEL --wav_path PATH_TO_INPUT --output_file PATH_TO_OUTPUT --use_256 
-```
+Just say the word 👌
