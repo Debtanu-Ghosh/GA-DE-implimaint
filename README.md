@@ -33,18 +33,6 @@ The proposed framework integrates **evolutionary computation** and **generative 
 
 ---
 
-## 📊 Evaluation
-
-The framework is evaluated using:
-
-* **Objective metrics:** MCD, F0-RMSE
-* **Subjective metric:** Mean Opinion Score (MOS)
-* **Comparative analysis:** Fixed DE, Bayesian optimization, and baseline GAN models
-
-Detailed results and discussion are provided in the associated paper.
-
----
-
 ## 🛠️ Code Status
 
 ⚠️ **Important Notice**
@@ -67,8 +55,6 @@ If you use this work, please cite our paper:
 
 > *GA-Tuned Differential Evolution for Hyperparameter Optimization of KAN-GAN in Audio-Visual Speech Synthesis*,
 > submitted to **WCCI (IEEE World Congress on Computational Intelligence)**.
-
-(Citation details will be updated upon publication.)
 
 ---
 
